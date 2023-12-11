@@ -15,6 +15,7 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+         <link rel="stylesheet" href="./styles/styles.css">
         <title>Stay Organized</title>
     </head>
     <body>
@@ -45,36 +46,40 @@
 
         <main class="container mt-5">
             <div class="card">
-                <h1 class="card-title card-header">Create New To Do</h1>
+                <div class="card-title card-header">Create New To Do</div>
 
-                <form id="todo-form" class="card-body mx-5">
-                    <div class="row row-cols-1 row-cols-sm-3 gx-3">
-                        <select id="user-select" class="col" required>
+                <form id="todo-form" class="card-body">
+                    <div class="row row-cols-3">
+                      <div>
+                        <select id="user-select" class="form-select" required>
                             <option>Select User</option>
                         </select>
-
-                        <select id="category-select" class="col" required>
+                      </div>
+                      <div>
+                        <select id="category-select" class="form-select" required>
                             <option>Select Category</option>
                         </select>
-
-                        <select id="priority-select" class="col" required>
+                      </div>
+                      <div>
+                        <select id="priority-select" class="form-select" required>
                             <option value="Low">Low</option>
                             <option value="Medium">Medium</option>
                             <option value="High">High</option>
                         </select>
+                      </div>
                     </div>
 
-                    <div class="row mt-3">
-                        <label for="description-container" class="g-0">To Do Description</label>
-                        <textarea id="description-container" required></textarea>
+                    <div class="mt-3">
+                        <label for="description-container" class="form-label">To Do Description</label>
+                        <textarea class="form-control" id="description-container" required></textarea>
                     </div>
 
-                    <div class="row mt-3">
-                        <label for="deadline-input" class="g-0">Deadline</label>
+                    <div class="">
+                        <label for="deadline-input" class="form-label">Deadline</label>
                         <input id="deadline-input" type="text" class="form-control" placeholder="YYYY-MM-DD" required/>
                     </div>
 
-                    <input type="submit" value="Add" class="btn btn-primary mt-3" />
+                    <input type="submit" value="Add" class="btn btn-primary mt-3 col-12" />
                 </form>
             </div>
         </main>

@@ -1,0 +1,36 @@
+body {
+    background-color: #F4FAFF;
+}
+
+.btn-primary {
+    background-color: #B7ADCF;
+    border-color: #B7ADCF;
+}
+
+.btn-primary:hover  {
+    background-color: #ae99e0;
+    border-color: #B7ADCF;
+}
+
+.btn-primary:active:focus{
+    background-color: #5e449e;
+    border-color: #B7ADCF;
+}
+
+li:hover {
+    background-color: #DEE7E7;
+}
+
+.nav-underline > .active{
+    border-color: #ae99e0 !important;
+    color:#3d3253 !important;
+}
+
+.nav-underline > *:hover{
+    border-color: #ae99e0 !important;
+}
+
+nav{
+    background: #fff;
+    box-shadow: #0000001f 0px 0px 4px 1px;
+}

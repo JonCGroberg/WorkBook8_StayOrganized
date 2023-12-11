@@ -13,6 +13,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Stay Organized</title>
   </head>
   <body>
@@ -44,9 +45,17 @@
       </div>
     </nav>
     <main class="container mt-5">
-      <label for="user-select">Select User:</label>
-      <select id="user-select"></select>
-      <div id="task-list"></div>
+      <div class="row">
+        <div class="col-3">
+          <label for="user-select" class="form-control">Select User</label>
+        </div>
+        <div class="col">
+          <select id="user-select" class="form-select"></select>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div id="task-list" class="card-body"></div>
+      </div>
     </main>
     <script src="./scripts/todos.js"></script>
     <script
