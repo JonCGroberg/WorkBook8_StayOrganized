@@ -19,6 +19,7 @@ fetch("http://localhost:8083/api/todos")
 
     userSelect.addEventListener("change", () => {
       const selectedUserId = userSelect.value;
+
       const filteredTasks = data.filter(
         (task) => task.userid == selectedUserId
       );
@@ -26,7 +27,7 @@ fetch("http://localhost:8083/api/todos")
       taskList.innerHTML = "";
 
       filteredTasks.forEach((task) => {
-        const taskItem = document.createElement("div");
+        const taskItem = document.createElement("li");
         taskItem.textContent = task.description;
         taskList.appendChild(taskItem);
       });
