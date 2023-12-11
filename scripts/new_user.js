@@ -23,13 +23,13 @@ inputElms.form.addEventListener("submit", async (event) => {
     return;
   }
 
-  const response = await fetch(url, {
+  const {status} = await fetch(url, {
     method: "POST",
     headers: { Accept: "application/json", "Content-Type": "application/json" },
     body: JSON.stringify(newUserData),
   });
 
-  statusCodeHandler(response.status);
+  statusCodeHandler(status);
 });
 
 //--- Handle & Utility Functions ---
