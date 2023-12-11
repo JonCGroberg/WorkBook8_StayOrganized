@@ -18,7 +18,7 @@ inputElms.form.addEventListener("submit", async (event) => {
     passwordVer: inputElms.passwordVer.value,
   };
 
-  if (password != passwordVer) {
+  if (newUserData.password != newUserData.passwordVer) {
     toastUser("Passwords must match");
     return;
   }
