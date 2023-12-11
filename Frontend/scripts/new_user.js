@@ -11,10 +11,12 @@ const inputElms = {
 inputElms.form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const name = inputElms.name.value;
-  const username = inputElms.username.value;
-  const password = inputElms.password.value;
-  const passwordVer = inputElms.passwordVer.value;
+  const newUserData = {
+    name: inputElms.name.value,
+    username: inputElms.username.value,
+    password: inputElms.password.value,
+    passwordVer: inputElms.passwordVer.value,
+  };
 
   if (password != passwordVer) {
     toastUser("Passwords must match");
@@ -24,7 +26,7 @@ inputElms.form.addEventListener("submit", async (event) => {
   const response = await fetch(url, {
     method: "POST",
     headers: { Accept: "application/json", "Content-Type": "application/json" },
-    body: JSON.stringify({ name, username, password }),
+    body: JSON.stringify(newUserData),
   });
 
   statusCodeHandler(response.status);
