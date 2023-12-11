@@ -1,6 +1,3 @@
-body {
-    background-color: #F4FAFF;
-}
 
 .btn-primary {
     background-color: #B7ADCF;
@@ -23,14 +20,18 @@ li:hover {
 
 .nav-underline > .active{
     border-color: #ae99e0 !important;
-    color:#3d3253 !important;
+    color:rgb(46, 8, 77) !important;
 }
 
 .nav-underline > *:hover{
-    border-color: #ae99e0 !important;
+    border-color: #ae99e08c !important;
 }
 
 nav{
-    background: #fff;
-    box-shadow: #0000001f 0px 0px 4px 1px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: #0000001e 0px 0px 4px 1px;
+}
+
+.card{
+    box-shadow: #0000000c 1px 1px 4px 1px;
 }
