@@ -12,7 +12,7 @@ inputElms.form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
   const name = inputElms.name.value;
-  const username = inputElms.name.value;
+  const username = inputElms.username.value;
   const password = inputElms.password.value;
   const passwordVer = inputElms.passwordVer.value;
 
