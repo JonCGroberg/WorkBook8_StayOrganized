@@ -42,36 +42,36 @@
         </div>
       </div>
     </nav>
+    <main class="container mt-5">
+      <h1>Create New To Do</h1>
 
-    <h1>Create New To Do</h1>
+      <form id="todo-form">
+        <select id="user-select" required>
+          <option>Select User</option>
+        </select>
 
-    <form id="todo-form">
-      <select id="user-select" required>
-        <option>Select User</option>
-      </select>
+        <select id="category-select" required>
+          <option>Select Category</option>
+        </select>
 
-      <select id="category-select" required>
-        <option>Select Category</option>
-      </select>
+        <select id="priority-select" required>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
 
-      <select id="priority-select" required>
-        <option value="Low">Low</option>
-        <option value="Medium">Medium</option>
-        <option value="High">High</option>
-      </select>
+        <textarea id="description-container" required></textarea>
 
-      <textarea id="description-container" required></textarea>
+        <input
+          id="deadline-input"
+          type="text"
+          placeholder="YYYY-MM-DD"
+          required
+        />
 
-      <input
-        id="deadline-input"
-        type="text"
-        placeholder="YYYY-MM-DD"
-        required
-      />
-
-      <input type="submit" value="Add" />
-    </form>
-
+        <input type="submit" value="Add" />
+      </form>
+    </main>
     <script src="scripts/new_todo.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
